@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: whitesmoke;
+    color: #333;
+    transition: background-color 2S ease;
+}
+.oscurecer{
+    background-color: rgba(0, 0, 0, .7);
+
+}
+
+
+.container{
+    max-width: 1024px;
+    margin: 0 auto;
+}
+/*Contenedor de botonera y cards*/
+.cards-dinamica{
+    background-color: antiquewhite;
+   /* display: flex;*/
+
+}
+
+/*Contenedor de todos los botones*/
+.botonera{
+    background-color: orange;
+    display: flex;
+    justify-content: center;
+
+}
+
+
+
+
+/*Contenedor de todas las cards*/
+.cards{
+    /*background-color: blue; */
+    display: flex;
+    justify-content: center;
+    position: relative;
+    
+}
+
+.card{
+    /*background-color: yellow;*/
+    max-width: 350px;
+    background-color: rgb(223, 98, 218);
+    border: solid 2px gainsboro;
+    padding: .5em;
+    /*display: block;*/
+    opacity: 0;
+     transition: opacity 2s ease;
+     position: absolute;
+     inset: auto;
+}
+
+.card-show{
+    opacity: 1;
+}
+
+.header-card{
+    display: flex;
+    justify-content: end;
+    padding: .2em;
+   
+}
+
+/*.card:hover{
+    opacity: 1;
+}*/
+
+
+.main-card figure{
+    overflow: hidden;
+}
+
+.main-card img{
+
+    width: 100%;
+}
+
+.footer-card{
+    display:flex;
+    justify-content: center;
+    padding: .5em;
+    
+}
+
+.btn{
+    border: none;
+    padding: .5em;
+    margin: .2em;
+    cursor: pointer;
+    box-shadow: 3px 3px 12px;
+    background: radial-gradient(rgb(236, 41, 6), tomato);
+    font-weight: bold;
+    transition: box-shadow 2s;
+
+}
+
+/* .btn:hover{
+    box-shadow: inset 3px 3px 12px; /*hace que salga la sombra interna
+}
+ */
+
+.btn-push{
+    box-shadow: inset 3px 3px 12px;
+}
+
+
+.btn-submit{
+    background: radial-gradient(rgb(12, 234, 12),rgb(193, 220, 193));
+}
+
+footer{
+    position: fixed;   
+    bottom: 0;
+    left: 0;
+    background-color: #333;
+    color: whitesmoke;
+    width: 100%;
+}
+
